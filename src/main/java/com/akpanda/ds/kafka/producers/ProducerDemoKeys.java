@@ -21,7 +21,7 @@ public class ProducerDemoKeys {
         producerProperties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
         KafkaProducer<String,String> producer = new KafkaProducer<String, String>(producerProperties);
-        for(int i=0;i<10;i++){
+        for(int i=11;i<21;i++){
             String topic = "first_topic";
             String value = "hello "+i;
             String key = "id_"+i;
